@@ -1,10 +1,13 @@
 {
   "private": true,
+  "homepage": "https://mihafalev8.github.io/hqd/",
   "scripts": {
     "dev": "nuxt -c nuxt.config.js",
     "build": "nuxt build -c nuxt.config.js",
     "start": "nuxt start -c nuxt.config.js",
-    "lint": "eslint --fix --ext .js,.vue"
+    "lint": "eslint --fix --ext .js,.vue",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
